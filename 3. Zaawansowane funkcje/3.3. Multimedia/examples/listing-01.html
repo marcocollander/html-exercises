@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta charset=UTF-8">
+  <title>Przykład</title>
+
+</head>
+<body>
+<video width="360" height="240" src="timesSquare.mp4"
+       autoplay controls preload="none" muted>
+  Nie można wyświetlić filmu
+</video>
+
+<script>
+  const video = document.querySelector('video');
+
+  video.addEventListener('click', () => {
+    video.removeAttribute('muted');
+  })
+</script>
+</body>
+</html>

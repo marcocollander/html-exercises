@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontrolowanie sposobu odtwarzania</title>
+</head>
+<body>
+
+<video src="20210907_095857_06.mp4" width="300" preload="auto">
+  Nie można wyświetlić filmu
+</video>
+
+<div>
+  <button>Play</button>
+  <button>Pause</button>
+</div>
+
+<script>
+  const video = document.querySelector('video');
+  const buttons = document.querySelectorAll('button');
+
+  for(const button of buttons) {
+    button.addEventListener('click', (e) => {
+      switch (e.target.innerHTML) {
+        case 'Play': video.play();
+        break;
+        case 'Pause': video.pause();
+        break;
+      }
+    })
+  }
+</script>
+
+</body>
+</html>

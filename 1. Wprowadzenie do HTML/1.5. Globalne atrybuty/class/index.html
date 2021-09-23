@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<a class="class1 class2" href="https://www.helion.pl">Strona Helionu</a>
+<p></p>
+<a class="class2 superclass" href="https://w3c.org">Strona W3C</a>
+<p></p>
+
+<button class="btnChange">Change</button>
+
+<div>
+  <p>
+    <span>Wielki</span>
+    <span>mały</span>
+
+  </p>
+</div>
+
+<script>
+  const btnChange = document.querySelector('.btnChange');
+  const elems = document.getElementsByClassName('class2');
+
+  btnChange.addEventListener('click', () => {
+    for (const elem of elems) {
+      elem.style.border = 'thin solid red';
+      elem.style.backgroundColor = 'grey'
+      elem.style.color = 'black';
+      elem.style.textDecoration = 'none';
+      elem.style.padding = '10px 30px';
+      elem.style.marginTop = '20px';
+      elem.style.display = 'block'
+      elem.style.width = '50%';
+      elem.style.boxSizing = 'border-box'
+    }
+  })
+</script>
+</body>
+</html>

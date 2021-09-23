@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    video {
+      background-color: lightgrey;
+      border: medium double black;
+    }
+
+    video::cue {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+<video src="nil.mp4" width="600" height="400" controls preload="auto"
+       poster="na_nilu.jpg" muted>
+  <track src="captions.vtt" default kind="captions">
+  Nie można wyświetlić filmu
+</video>
+
+<video src="friday.mp4" controls width="350">
+  <track default
+         kind="captions"
+         srclang="en"
+         src="friday.vtt" >
+  Sorry, your browser doesn't support embedded videos.
+</video>
+
+<script>
+ let textTrackElem = document.querySelector('track');
+ textTrackElem.addEventListener("cuechange", () => {
+   console.log('Zmiana tekstu');
+ });
+</script>
+</body>
+</html>
