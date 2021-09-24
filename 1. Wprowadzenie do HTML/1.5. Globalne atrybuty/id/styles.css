@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list h2 {
+  margin: 10px 0;
+}
+
+.list ol {
+  margin-left: 50px;
+}
+
+.list li {
+  margin-bottom: 10px;
+}
+
+.list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+h1 {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+p {
+  width: 55vw;
+  margin: 20px auto
+}
+
+
+main h2,
+h3 {
+  text-align: center;
+}
