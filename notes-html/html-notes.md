@@ -354,6 +354,17 @@ nie będą renderować elementów z zestawem ukrytych atrybutów.
 Na przykład niewłaściwe byłoby użycie atrybutu `href` do linkowania do sekcji oznaczonej atrybutem `hidden`. Jeśli treść
 nie ma zastosowania lub nie jest istotna, nie ma powodu, aby do niej linkować.
 
+### Atrybut id
+
+Atrybut id służy do przypisywania elementom unikalnych identyfikatorów. Identyfikatory te często wykorzystuje się do
+nadawania stylów elementom i wybierania elementów w JavaScript.
+
+> Wskazówka Atrybut id można również wykorzystywać do przenoszenia się do określonego miejsca w dokumencie. Jeśli 
+> jakiś fragment dokumentu oznaczymy `id="fragment"` to przejdziemy do niego `<a href="#fragment">fragment</a>`
+
+
+
+
 ## 1.6. przydatne narzędzia HTML
 
 ## Podsumowanie
